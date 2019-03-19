@@ -26,3 +26,11 @@ class Recipe(models.Model):
 
     def url(self):
         return f"/recipe/{self.id}"
+
+
+class Unit(models.Model):
+    name = models.CharField(max_length=20)
+    abbr = models.CharField(max_length=6)
+
+    def __str__(self):
+        return self.name
