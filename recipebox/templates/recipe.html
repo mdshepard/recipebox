@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recipes</title>
+    <title> Recipes </title>
 </head>
 <body>
     <ul>
@@ -12,8 +12,12 @@
             <b>{{recipe.title}}, by </b>
             <a href="/author/{{ recipe.author.id }}"> {{ recipe.author }}</a>
         </li>
+        <p>{{ recipe.description }}</p>
+        <p>total cook time: {{ recipe.total_time }}</p>
+
         <ul>
-            <li>"Some instructions for cookin', babychild!"</li>
+            <li>Cooking instructions:</li>
+            <li>{{ recipe.instructions }}</li>
         </ul>
     </ul>
     
