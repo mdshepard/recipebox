@@ -1,8 +1,8 @@
 ## Django Recipe Box!
 
-# This is a demonstration of django and it's ORM
+#### This is a demonstration of django and it's ORM
 
-# This project uses elementary django to set up a sql lite database using Django's ORM. Object Representative Model. HTML is templated and rendered using jinja.
+#### This project uses elementary django to set up a sql lite database using Django's ORM. Object Representative Model. HTML is templated and rendered using jinja.
 
 Included features:
 Authentication
