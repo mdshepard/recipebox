@@ -91,7 +91,7 @@ def add_recipe(req):
     return render(req, 'add_recipe.html', {'form': form})
 
 
-def login_view(request):
+def loginv(request):
 
     if request.method == "POST":
         form = LoginForm(request.POST)
@@ -110,13 +110,13 @@ def login_view(request):
     return render(request, 'generic_form.html', {'form': form})
 
 
-def logout_view(request):
+def logoutv(request):
 
     logout(request)
     return HttpResponseRedirect(request.GET.get('next', '/'))
 
 
-def signup_view(request):
+def signup(request):
     if request.method == "POST":
         form = SignupForm(request.POST)
 
