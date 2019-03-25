@@ -1,7 +1,5 @@
 from django.contrib import admin
-from .models import Author, Unit, Recipe  # Food
+from .models import Author, Recipe
 
 admin.site.register(Recipe)
 admin.site.register(Author)
-admin.site.register(Unit)
-# admin.site.register(Food)

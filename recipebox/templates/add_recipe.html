@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block rcol %}
+
+<form action="/recipe/new" method="POST">
+	{% csrf_token %}
+	{{ recipeForm.as_p }}
+	<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
